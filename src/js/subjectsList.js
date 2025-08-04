@@ -1,3 +1,7 @@
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
+
 const lists = {
   "sports": [
     "https://www.espn.com",
