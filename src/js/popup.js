@@ -8,8 +8,8 @@ const START_BUTTON = document.getElementById('start-button');
 const ADD_URL_BUTTON = document.getElementById('add-url-button');
 const URL_LIST_CONTAINER = document.getElementById('url-list-container');
 
-// URL validation regex
-const urlRegex = new RegExp("^(http[s]?:\\/\\/(www\\.)?|www\\.){0,1}([0-9A-Za-z-\\.@:%_\+~#=]+)+((\\.[a-zA-Z]{2,3})+)(/(.)*)?(\\?(.)*)?");
+// URL validation regex - supports localhost, IP addresses, domains with ports and query params
+const urlRegex = /^https?:\/\/(?:www\.)?(?:localhost|(?:\d{1,3}\.){3}\d{1,3}|[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*)(?::\d+)?(?:\/[^\s]*)?$/;
 
 let urlEntryCounter = 0;
 
