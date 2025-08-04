@@ -1,0 +1,157 @@
+html {
+  width: 500px;
+  height: 600px;
+}
+
+/* Title */
+h1 {
+  color: #57a305;
+  text-align: center;
+  font-size: 37px;
+  margin: 0;
+}
+
+/* URL Entry Container */
+#url-list-container {
+  margin-bottom: 20px;
+}
+
+.url-entry {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  gap: 10px;
+}
+
+.url-entry-inputs {
+  flex: 1;
+  display: flex;
+  gap: 10px;
+}
+
+.url-input {
+  flex: 3;
+}
+
+.seconds-input {
+  flex: 1;
+  min-width: 80px;
+}
+
+.remove-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 12px 15px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 48px;
+  min-width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.remove-btn:hover {
+  background-color: #c82333;
+}
+
+.remove-btn:active {
+  transform: scale(0.95);
+}
+
+/* Add URL Button */
+.add-url-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.add-url-btn {
+  background-color: #57a305;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.add-url-btn:hover {
+  background-color: #4a8c04;
+}
+
+.add-url-btn:active {
+  transform: scale(0.95);
+}
+
+input[type="text"], input[type="number"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  height: 48px;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+  border: 2px solid #555;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  outline: none;
+}
+
+/* Error message styling */
+.error-message {
+  color: #dc3545;
+  font-size: 12px;
+  margin-top: 4px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+}
+
+/* Error state for inputs */
+input.error {
+  border-color: #dc3545;
+}
+
+/* Start button */
+.start-btn {
+  background-color: #57a305;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+  margin-right: 3px;
+}
+
+.action-buttons {
+  text-align: center;
+}
+
+/* Stop button */
+.stop-btn {
+  background-color: gray;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+  margin-left: 3px;
+}
+
+/* Add a transform effect when the button is clicked */
+.start-btn:active, .stop-btn:active {
+  transform: scale(0.95);
+}

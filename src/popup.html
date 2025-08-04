@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+		<link href="./css/popup.css" rel="stylesheet">
+		<title>URL Rotator</title>
+	</head>
+    <body>
+		<h1 class="title">URL Rotator &#10227;</h1>
+		<form id="url-form">
+			<div id="url-list-container">
+				<!-- Dynamic URL entries will be inserted here -->
+			</div>
+			<div class="add-url-container">
+				<button type="button" class="add-url-btn" id="add-url-button">+ Add URL</button>
+			</div>
+		</form>
+		<div class="action-buttons">
+			<button class="start-btn" id="start-button">Start</button>
+			<button class="stop-btn" id="stop-button">Stop</button>
+		</div>
+		<script type="module" src="./js/popup.js"></script>
+    </body>
+</html>
